@@ -1,23 +1,9 @@
-let displayValue = '';
+const wrapper = document.querySelector('.wrapper');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
 
-function appendToDisplay(value) {
-    displayValue += value;
-    document.getElementById('display').value = displayValue;
-}
+registerLink.onclick = () => {
+    wrapper.classList.add('active');
+ };
 
-function clearDisplay() {
-    displayValue = '';
-    document.getElementById('display').value = '';
-}
 
-function calculateResult() {
-    try {
-        displayValue = eval(displayValue);
-        document.getElementById('display').value = displayValue;
-    } catch (error) {
-        document.getElementById('display').value = 'Error';
-        setTimeout(() => {
-            clearDisplay();
-        }, 1000);
-    }
-}

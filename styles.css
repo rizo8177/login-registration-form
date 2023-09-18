@@ -28,25 +28,35 @@ body {
 }
 
 .wrapper .form-box {
-  position: relative;
+  position: absolute;
   top: 0;
   width: 50%;
   height: 100%;
-  /* background: red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+ 
 }
 
 .wrapper .form-box.login {
   left: 0;
-  padding: 40px;
+  padding: 0 60px 0 40px;
 }
 
-/* estilo aplicado (nivel mas interno que .form-box h2)   */
-.wrapper .form-box.login.h2 h2 {
-  color: #fff;
-  /* color: red; */
+
+.wrapper .form-box.login .animation {
+  transform: translateX(0);
+  transition: .7s ease;
+}
+
+.wrapper.active .form-box.login .animation{
+  transform: translateX(-120%);
+}
+
+.wrapper .form-box.register {
+  right: 0%;  
+  padding: 0 40px 0 60px; 
+  display: none;
 }
 
 .form-box h2 {
@@ -207,7 +217,13 @@ body {
   right: 0;
   text-align: right; 
   padding: 0 40px 60px 150px;
+}
 
+.wrapper .info-text.register {
+  left: 0;
+  text-align: left; 
+  padding: 0 150px 60px 40px;
+  display: none;
 }
 
 .info-text h2 {
@@ -225,12 +241,27 @@ body {
 
  .wrapper .bg-animate {
   position: absolute;
-  top: 0;
+  top: -4px;
   right: 0;
   width: 850px;
   height: 600px;
   background: linear-gradient(45deg,#081b29,#0ef); 
   border-bottom: 3px solid  #0ef;
   transform: rotate(10deg) skewY(45deg); 
+  /* transform: rotate(0) skewY(0);  */
   transform-origin: bottom right;
+}
+
+.wrapper .bg-animate2 {
+  position: absolute;
+  top: 100%;
+  left: 250px;
+  width: 850px;
+  height: 700px;
+  background: #081b29;
+  border-top: 3px solid  #0ef;
+  /* transform: rotate(10deg) skewY(45deg);  */
+  /* transform: rotate(-11deg) skewY(-41deg);  */
+  transform: rotate(0) skewY(0); 
+  transform-origin: bottom left ;
 }
