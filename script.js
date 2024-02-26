@@ -1,9 +1,4 @@
-const wrapper = document.querySelector('.wrapper');
-const registerLink = document.querySelector('.register-link');
-const loginLink = document.querySelector('.login-link');
-
-registerLink.onclick = () => {
-    wrapper.classList.add('active');
- };
-
-
+// Este script cambiará la descripción al hacer clic en las imágenes
+document.addEventListener('DOMContentLoaded', () => {
+    // Se añadirá el código para manejar los clics en las imágenes aquí
+});

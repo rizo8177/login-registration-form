@@ -1,90 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>User Login</title>
-    <!-- You can link to a CSS file for styling if needed -->
-    <link href="styles.css" rel="stylesheet" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <title>Molosos del Califa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Aquí se puede añadir la referencia a Font Awesome si se van a usar iconos -->
   </head>
+
   <body>
-    <div class="wrapper">
-      <span class="bg-animate"></span>
-      <span class="bg-animate2"></span>
+    <!-- Encabezado con el logotipo -->
+    <header>
+      <img
+        src="https://i.ibb.co/JRpqpWz/logo.png"
+        alt="Logotipo de Molosos del Califa"
+      />
+    </header>
 
-      <div class="form-box login">
-        <h2 class="animation" style="--i:0;">Log in</h2>
-        <form action="#">
-          <!-- <form action="login.php" method="POST"> -->
-          <div class="input-box animation" style="--i:1;">
-            <input type="text" id="username" name="username" required />
-            <label for="username">Username:</label>
-            <i class="bx bxs-user"></i>
-          </div>
-          <div class="input-box animation" style="--i:2;">
-            <input type="password" id="password" name="password" required />
-            <label for="password">Password:</label>
-            <i class="bx bxs-lock-alt"></i>
-          </div>
-          <button type="submit" class="btn animation" style="--i:3;">Login</button>
-          <div class="logreg-link animation" style="--i:4;">
-            <p>
-              Don't have an account?
-              <a href="#" class="register-link">Sign Up</a>
-            </p>
-          </div>
-        </form>
-      </div>
-      <!-- After successful login, display the welcome message -->
-      <div class="info-text login">
-        <h2 class="animation" style="--i:0;">Welcome Back!</h2>
-        <p class="animation" style="--i:0;">
-          This is the protected content that you can access after logging in.
-        </p>
-      </div>
+    <!-- Menú de Navegación -->
+    <nav>
+      <ul id="menu-navegacion">
+        <li><a href="#bulldog1">Duque</a></li>
+        <li><a href="#bulldog2">Luna</a></li>
+        <li><a href="#bulldog3">Rocco</a></li>
+        <li><a href="#bulldog4">Bella</a></li>
+        <li><a href="#bulldog5">Max</a></li>
+      </ul>
+    </nav>
 
-      <div class="form-box register">
-        <h2 class="animation" style="--i:22;">Sign up</h2>
-        <form action="#">
-          <!-- <form action="login.php" method="POST"> -->
-          <div class="input-box animation" style="--i:23">
-            <input type="text" id="username" name="username" required />
-            <label for="username" style="white-space:nowrap">Username:</label>
-            <i class="bx bxs-user"></i>
-          </div>
-          <div class="input-box animation" style="--i:24;">
-            <input type="email" id="email" name="email" required />
-            <label for="email" style="white-space:nowrap">Email:</label>
-            <i class='bx bxs-envelope'></i>
-          </div> 
-          <div class="input-box animation" style="--i:25;">
-            <input type="password" id="password" name="password" required />
-            <label for="password" style="white-space:nowrap">Password:</label>
-            <i class="bx bxs-lock-alt"></i>
-          </div>
-          <button class="btn animation" type="submit" style="--i:26;">Sign up</button>
-          <div class="logreg-link animation" style="--i:27;">
-            <p>
-              Already have an account?
-              <a href="#" class="login-link">Login</a>
-            </p>
-          </div>
-        </form>
-      </div>
+    <!-- Galería de Imágenes -->
+    <section id="galeria">
+      <!-- Imágenes de los bulldogs -->
+    </section>
 
-        <!-- After successful Sign up, display the successful register message -->
-        <div class="info-text register">
-          <h2 class="animation">Welcome Back!</h2>
-          <p class="animation">
-            This is the protected content that you can access after Sign up.
-          </p>
-        </div>
+    <!-- Descripción Dinámica -->
+    <section id="descripcion">
+      <!-- La descripción cambiará al hacer clic en las imágenes de la galería -->
+    </section>
 
-    </div>
+    <!-- Pie de Página -->
+    <footer>
+      <!-- Enlaces de políticas e información sobre el creador -->
+    </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
